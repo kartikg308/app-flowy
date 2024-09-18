@@ -521,8 +521,8 @@ class _AppFlowyRichTextState extends State<AppFlowyRichText> with SelectableMixi
           alignment: PlaceholderAlignment.middle,
           child: Math.tex(
             textInsert.text,
-            mathStyle: MathStyle.text,
-            textStyle: textStyle,
+            mathStyle: MathStyle.display,
+            textStyle: textStyle.copyWith(color: Colors.white),
           ),
         );
         // for (var character in collection) {
